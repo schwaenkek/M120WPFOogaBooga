@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120WPFOogaBooga"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="359" Width="689"
+        ResizeMode="NoResize">
     <Grid>
+        <Label Content="Höchste nummer&#xD;&#xA;" HorizontalAlignment="Left" Height="44" Margin="260,61,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="output&#xA;" HorizontalAlignment="Left" Height="31" Margin="112,155,0,0" VerticalAlignment="Top" Width="328"/>
+        <Label Content="Tiefste Nummer" HorizontalAlignment="Left" Height="44" Margin="112,61,0,0" VerticalAlignment="Top" Width="141"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="260,113,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="147" TextChanged="TextBox_TextChanged" x:Name="txt_Highest_Numba"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="112,113,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="141" TextChanged="TextBox_TextChanged" x:Name="txt_Lowest_Numba"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="115,196,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="294" TextChanged="TextBox_TextChanged" IsReadOnly="True" x:Name="txt_output" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.042"/>
+                    <RotateTransform Angle="-0.019"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Generate" HorizontalAlignment="Left" Height="37" Margin="456,196,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click"/>
+        <Label Content="Menge an Zahlen" HorizontalAlignment="Left" Height="44" Margin="412,61,0,0" VerticalAlignment="Top" Width="164"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="414,113,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" IsReadOnly="False" x:Name="txt_Numba_Amount"/>
 
     </Grid>
 </Window>
