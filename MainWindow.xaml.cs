@@ -44,7 +44,7 @@ namespace M120WPFOogaBooga
             }
             catch
             {
-                Console.WriteLine("euou. numba prolly incowekt");
+                txt_output.Text = "euou. numba prolly incowekt";
             }
 
         }
